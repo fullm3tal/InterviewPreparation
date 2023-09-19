@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_B" android:launchMode="standard" />
+        <activity android:name=".Activity_B" android:launchMode="singleTop" />
         <activity android:name=".Activity_C" android:launchMode="standard"/>
         <activity android:name=".Activity_D" android:launchMode="standard"/>
     </application>
