@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_B" android:launchMode="singleTask"  android:taskAffinity="com.task.affinity"/>
+        <activity android:name=".Activity_B" android:launchMode="singleTask"  android:taskAffinity="com.task.affinity"/>     <!--With and without affinity-->
+
         <activity android:name=".Activity_C" android:launchMode="standard"/>
         <activity android:name=".Activity_D" android:launchMode="standard"/>
     </application>
