@@ -10,7 +10,6 @@ import java.util.concurrent.TimeUnit
 class RetrofitInstance {
     val service: SpaceXService
         get() {
-
             val loggingInterceptor = HttpLoggingInterceptor().apply {
                 level = HttpLoggingInterceptor.Level.BODY
             }

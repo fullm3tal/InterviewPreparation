@@ -1,6 +1,7 @@
 package com.fullm3tal.interviewpreparation
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             if (it.list.isNotEmpty()) {
                 binding.tvData.text = it.list.size.toString()
             }
+        }
+        binding.btnSecond.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
         }
     }
 }

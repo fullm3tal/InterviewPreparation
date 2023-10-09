@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InterviewPreparation</string>
+    <string name="navigate_to_second">Navigate to Second</string>
 </resources>
