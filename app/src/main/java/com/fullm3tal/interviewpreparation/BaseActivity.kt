@@ -24,46 +24,46 @@ const val TAG = "InterviewPreparationActivity"
  *   onRestoreInstanceState:
  *   onResume:
  */
-open class BaseActivity: AppCompatActivity() {
+open class BaseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(TAG, "onCreate: ")
+        Log.d(TAG, "${this.localClassName} onCreate: ")
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        Log.d(TAG, "onSaveInstanceState: ")
+        Log.d(TAG, "${this.localClassName} onSaveInstanceState: ")
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        Log.d(TAG, "onRestoreInstanceState: ")
+        Log.d(TAG, "${this.localClassName} onRestoreInstanceState: ")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d(TAG, "onStart: ")
+        Log.d(TAG, "${this.localClassName} onStart: ")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d(TAG, "onResume: ")
+        Log.d(TAG, "${this.localClassName} onResume: ")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d(TAG, "onPause: ")
+        Log.d(TAG, "${this.localClassName} onPause: ")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d(TAG, "onStop: ")
+        Log.d(TAG, "${this.localClassName} onStop: ")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d(TAG, "onDestroy: ")
+        Log.d(TAG, "${this.localClassName} onDestroy: ")
     }
 
 }
